@@ -1,0 +1,11 @@
+{
+  "selected_model": "Logistic regression",
+  "best_params": {
+    "model__C": 1
+  },
+  "primary_metric": "f1",
+  "cv_mean_f1": 0.47009865843703824,
+  "rationale": "Logistic Regression was selected because it achieved the highest mean cross-validation F1-score of 0.470 (SD = 0.053), outperforming the Decision Tree, which achieved 0.398 (SD = 0.049). However, its out-of-fold predictions produced 566 false negatives, with churn recall of only 0.38, showing that many actual churners were missed. Subgroup recall should also be considered when assessing whether performance differs between new and established customers. Logistic Regression was preferred because it offers lower model complexity and greater interpretability than a decision tree with multiple splits, while providing better overall F1 performance. Its limitations in detecting churn must be acknowledged.",
+  "random_seed": 42,
+  "scikit_learn_version": "1.9.1"
+}
